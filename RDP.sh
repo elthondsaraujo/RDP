@@ -21,7 +21,7 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo apt-get install xterm
 sudo apt-get uninstall terminal
-sudo apt-get install lilyterm
+sudo apt-get install terminator
 sudo apt-get install gnome-terminal
 sudo apt-get install vlc
 sudo apt-get install ffmpeg
