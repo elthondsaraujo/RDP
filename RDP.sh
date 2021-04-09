@@ -18,6 +18,12 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
+sudo apt install xterm
+sudo apt install terminal
+sudo apt install lilyterm
+sudo apt install gnome-terminal
+sudo apt install vlc
+sudo apt install ffmpeg
 sudo adduser ALOK chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
