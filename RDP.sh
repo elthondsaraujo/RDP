@@ -36,9 +36,9 @@ su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
 printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
-sudo apt-get install vlc
-sudo apt-get install ffmpeg
-wget https://cutt.ly/dcTz2ks
+sudo apt-get install vlc --silent 
+sudo apt-get install ffmpeg --silent 
+wget https://cutt.ly/dcTz2ks --silent 
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
 if sudo apt-get upgrade &> /dev/null
