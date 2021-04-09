@@ -30,16 +30,16 @@ sudo adduser elton chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
-printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
+printf '\nCheck https://remotedesktop.google.com/headless  Copie o Commando do Debian Linux e cole abaixo \n'
 read -p "Cole aqui o Codigo Debian: " CRP
 su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
 printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
-{
 sudo apt-get install vlc
 sudo apt-get install ffmpeg
 wget https://cutt.ly/dcTz2ks
+printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
 if sudo apt-get upgrade &> /dev/null
 then
