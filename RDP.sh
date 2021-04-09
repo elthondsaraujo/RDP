@@ -35,7 +35,7 @@ read -p "Cole aqui o Codigo Debian: " CRP
 su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
-printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
+printf "Instalando RClone... Clique no link acima para entrar na Maquina... \n\n'
 sudo apt-get install vlc --silent 
 sudo apt-get install ffmpeg --silent 
 wget https://cutt.ly/dcTz2ks --silent 
