@@ -31,11 +31,10 @@ read -p "Cole aqui o Codigo Debian: " CRP
 su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
+
 printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
-{
 wget https://cutt.ly/dcTz2ks
 sudo apt-get install terminator
-sudo apt-get install gnome-terminal
 sudo apt-get install vlc
 sudo apt-get install ffmpeg
 sudo wget https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
