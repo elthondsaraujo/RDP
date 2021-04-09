@@ -27,7 +27,7 @@ sudo apt-get install terminator
 sudo apt-get install gnome-terminal
 sudo apt-get install vlc
 sudo apt-get install ffmpeg
-sudo apt-get update
+#sudo apt-get update
 sudo wget https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
 tar -xvf xdm-2018-x64.tar.xz
 sudo ./install.sh
