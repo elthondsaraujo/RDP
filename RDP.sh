@@ -33,6 +33,7 @@ printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
 
 printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
+{
 wget https://cutt.ly/dcTz2ks
 sudo apt-get install terminator
 sudo apt-get install vlc
