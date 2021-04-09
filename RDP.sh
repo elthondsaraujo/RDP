@@ -40,6 +40,8 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Cole aqui o Codigo Debian: " CRP
 su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
+printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
+{
 rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
 if sudo apt-get upgrade &> /dev/null
 then
