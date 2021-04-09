@@ -1,6 +1,6 @@
 #! /bin/bash
 
-printf "Instalando a Máquina virtual. Esta ação leva 2 minutos. Tenha paciência... " >&2
+printf "Instalando a Máquina virtual. Esta ação leva 3 minutos. Tenha paciência... " >&2
 {
 sudo useradd -m elton
 sudo adduser elton sudo
@@ -21,7 +21,7 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo apt-get uninstall terminal
 sudo apt-get install terminator
-sudo wget https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
+sudo wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
 tar -xvf xdm-2018-x64.tar.xz
 sudo ./install.sh
 #sudo apt-get update
