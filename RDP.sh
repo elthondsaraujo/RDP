@@ -41,9 +41,3 @@ sudo apt-get install ffmpeg --silent
 wget https://cutt.ly/dcTz2ks --silent 
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
-if sudo apt-get upgrade &> /dev/null
-then
-    printf "\n\nUpgrade Completed " >&2
-else
-    printf "\n\nError Occured " >&2
-fi
