@@ -11,3 +11,6 @@
 ! Rclone Gui pass = user
 
 ! Fixed Terminal error...
+
+# CREATE rclone.conf in: 
+/root/.config/rclone/rclone.conf
