@@ -15,8 +15,6 @@ apt install --assume-yes xfce4 desktop-base
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'  
 sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
-wget https://cutt.ly/dcTz2ks
-unzip dcTz2ks
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
@@ -27,9 +25,6 @@ sudo apt-get install gnome-terminal
 sudo apt-get install vlc
 sudo apt-get install ffmpeg
 #sudo apt-get update
-sudo wget https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
-tar -xvf xdm-2018-x64.tar.xz
-sudo ./install.sh
 curl https://rclone.org/install.sh | sudo bash
 sudo adduser elton chrome-remote-desktop
 } &> /dev/null &&
@@ -41,6 +36,10 @@ su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 printf "Instalando RClone... Clique no link acima para entrar na Maquina... " >&2
 {
+wget https://cutt.ly/dcTz2ks
+sudo wget https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
+tar -xvf xdm-2018-x64.tar.xz
+sudo ./install.sh
 rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
 if sudo apt-get upgrade &> /dev/null
 then
