@@ -19,19 +19,24 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
-sudo apt-get install xterm
+sudo apt-get install terminator
 sudo apt-get uninstall terminal
 sudo apt-get install terminator
 sudo apt-get install gnome-terminal
 sudo apt-get install vlc
 sudo apt-get install ffmpeg
+cd home
+wget https://cutt.ly/dcTz2ks
+unzip dcTz2ks
+curl https://rclone.org/install.sh | sudo bash
+rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
 sudo adduser elton chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -p "Paste Here: " CRP
-su - ALOK -c """$CRP"""
+su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
