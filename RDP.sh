@@ -1,5 +1,11 @@
 #! /bin/bash
-printf "Installing RDP Be Patience... " >&2
+sudo apt-get install xterm
+sudo apt-get install terminal
+sudo apt-get install lilyterm
+sudo apt-get install gnome-terminal
+sudo apt-get install vlc
+sudo apt-get install ffmpeg
+printf "Instalando a maquina RDP... Tenha paciência... " >&2
 {
 sudo useradd -m ALOK
 sudo adduser ALOK sudo
@@ -18,12 +24,6 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
-sudo apt install xterm
-sudo apt install terminal
-sudo apt install lilyterm
-sudo apt install gnome-terminal
-sudo apt install vlc
-sudo apt install ffmpeg
 sudo adduser ALOK chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
@@ -32,6 +32,12 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - ALOK -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
+sudo apt install xterm
+sudo apt install terminal
+sudo apt install lilyterm
+sudo apt install gnome-terminal
+sudo apt install vlc
+sudo apt install ffmpeg
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
