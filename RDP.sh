@@ -1,6 +1,6 @@
 #! /bin/bash
 
-printf "Instalando a maquina virtual. Esta ação leva 2 minutos. Tenha paciência... " >&2
+printf "Instalando a Máquina virtual. Esta ação leva 2 minutos. Tenha paciência... " >&2
 {
 sudo useradd -m elton
 sudo adduser elton sudo
@@ -35,9 +35,9 @@ read -p "Cole aqui o Codigo Debian: " CRP
 su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
-printf "Instalando RClone... Clique no link acima para entrar na Maquina... \n\n'
 sudo apt-get install vlc --silent 
 sudo apt-get install ffmpeg --silent 
 wget https://cutt.ly/dcTz2ks --silent 
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
+fi
