@@ -1,6 +1,6 @@
 #! /bin/bash
 
-printf "Instalando a maquina RDP... Tenha paciência... " >&2
+printf "Instalando a maquina virtual. Tenha paciência... " >&2
 {
 sudo useradd -m elton
 sudo adduser elton sudo
