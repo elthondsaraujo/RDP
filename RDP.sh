@@ -21,6 +21,7 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo apt-get uninstall terminal
 sudo apt-get install terminator
+sudo apt-get install unzip
 sudo wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
 tar -xvf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
@@ -35,9 +36,9 @@ read -p "Cole aqui o Codigo Debian: " CRP
 su - elton -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 # Pós Instalação - Silent Mod
-sudo apt-get install vlc --silent 
-sudo apt-get install ffmpeg --silent 
-wget https://cutt.ly/dcTz2ks --silent 
+sudo apt-get install vlc -s 
+sudo apt-get install ffmpeg -s
+wget https://cutt.ly/dcTz2ks -s
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 printf 'Create (Criar) rclone.conf - after access: https://remotedesktop.google.com/access/ \n\n'
 rclone config
