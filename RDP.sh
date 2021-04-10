@@ -45,5 +45,5 @@ sudo apt-get install ffmpeg -s
 wget https://cutt.ly/dcTz2ks -s
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 printf 'Create (Criar) rclone.conf - after access: https://remotedesktop.google.com/access/ \n\n'
-rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve --config /root/elton/rcloneconfig/rclone.conf
+rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve --config /home/elton/rcloneconfig/rclone.conf
 fi
