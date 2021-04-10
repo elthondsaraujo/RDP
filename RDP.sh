@@ -26,7 +26,7 @@ sudo wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2
 tar -xvf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
 #sudo apt-get update
-cd root/elton
+cd home/elton
 mkdir rcloneconfig
 cd rcloneconfig
 >rclone.conf
