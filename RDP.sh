@@ -26,6 +26,10 @@ sudo wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2
 tar -xvf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
 #sudo apt-get update
+cd root/elton
+mkdir rcloneconfig
+cd rcloneconfig
+>rclone.conf
 curl https://rclone.org/install.sh | sudo bash
 sudo adduser elton chrome-remote-desktop
 } &> /dev/null &&
@@ -41,5 +45,5 @@ sudo apt-get install ffmpeg -s
 wget https://cutt.ly/dcTz2ks -s
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
 printf 'Create (Criar) rclone.conf - after access: https://remotedesktop.google.com/access/ \n\n'
-rclone config
+rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve --config /root/elton/rcloneconfig/rclone.conf
 fi
