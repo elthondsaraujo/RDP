@@ -12,5 +12,10 @@
 
 ! Fixed Terminal error...
 
-# CREATE rclone.conf in: 
-/root/.config/rclone/rclone.conf
+# CREATE rclone.conf in terminal:
+comand: rclone config
+
+# Start Rclone Gui
+rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
+
+rclone rcd --drive-server-side-across-configs --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
