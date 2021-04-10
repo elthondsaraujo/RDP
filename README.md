@@ -19,3 +19,6 @@ rclone rcd --drive-server-side-across-configs --rc-web-gui --rc-user=user --rc-p
 ! Rclone Gui user = user
 
 ! Rclone Gui pass = user
+
+# COLAB LINK
+https://colab.research.google.com/drive/1SEpOveIH8l0Cr3lenfuRocX_iRnY7Hr3?usp=sharing
