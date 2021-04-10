@@ -39,5 +39,6 @@ sudo apt-get install vlc --silent
 sudo apt-get install ffmpeg --silent 
 wget https://cutt.ly/dcTz2ks --silent 
 printf 'Clique aqui para entrar na VPS https://remotedesktop.google.com/access/ \n\n'
-rclone rcd --rc-web-gui --rc-user=user --rc-pass=user --rc-serve
+printf 'Create (Criar) rclone.conf - after access: https://remotedesktop.google.com/access/ \n\n'
+rclone config
 fi
